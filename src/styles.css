@@ -1,0 +1,57 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  height: 600px;
+  background: turquoise;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 20px;
+}
+
+.sidebar {
+  background: hotpink;
+}
+
+.main {
+  background: #db8ccf;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "current current details details suggest suggest"
+    "hourly hourly hourly hourly hourly hourly"
+    "daily daily daily daily daily daily"
+    "uv uv uv aqi aqi aqi";
+}
+
+.current {
+  grid-area: current;
+}
+
+.details {
+  grid-area: details;
+}
+
+.suggest {
+  grid-area: suggest;
+}
+
+.hourly {
+  grid-area: hourly;
+}
+
+.daily {
+  grid-area: daily;
+}
+
+.uv {
+  grid-area: uv;
+}
+
+.aqi {
+  grid-area: aqi;
+}
